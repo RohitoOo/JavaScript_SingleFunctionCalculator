@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JavaScript Calulator</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+
+<div class="container">
+  <h2>JavaScript Calulator - Single Function </h2>
+<form name="forms">
+      <input type="text" id="answer"><br>
+      <input class="button" type="button" value=" 7 " onclick="forms.answer.value += 7">
+      <input class="button"type="button" value=" 8 " onclick="forms.answer.value += 8">
+      <input class="button"type="button" value=" 9 " onclick="forms.answer.value += 9">
+      <input id="function" class="button"type="button" value=" x " onclick="forms.answer.value += '*'">
+
+      <br>
+
+      <input class="button"type="button" value=" 4 " onclick="forms.answer.value += 4">
+      <input class="button"type="button" value=" 5 " onclick="forms.answer.value += 5">
+      <input class="button"type="button" value=" 6 " onclick="forms.answer.value += 6">
+      <input id="function" class="button"type="button" value=" / " onclick="forms.answer.value += '/'">
+      <br>
+
+      <input class="button"type="button" value=" 1 " onclick="forms.answer.value += 1">
+      <input class="button"type="button" value=" 2 " onclick="forms.answer.value += 2">
+      <input class="button"type="button" value=" 3 " onclick="forms.answer.value += 3">
+      <input id="function" class="button"type="button" value=" + " onclick="forms.answer.value += '+'">
+      <br>
+
+      <input class="button"type="button" value=" 0 " onclick="forms.answer.value += 0">
+      <input class="button"type="button" value=" . " onclick="forms.answer.value += '.'">
+      <input class="button"type="button" value=" - " onclick="forms.answer.value += '-'">
+      <input id="function" class="button "type="button" value="C" onclick="forms.answer.value = null">
+
+      <br>
+      <input type="button" id="equals" value=" = " onclick="forms.answer.value = eval(forms.answer.value)">
+</form>
+  </div>
+
+
+  <style>
+h2{
+
+  color: #666;
+  font-family: fantasy;
+}
+
+.container{
+margin: 20px 30%;
+
+}
+
+form{
+text-align: center;
+  max-width: 500px;
+}
+    #equals , #answer{
+      width: 60%;
+    }
+
+form #answer {
+border-radius: 0px;
+background: black;
+
+}
+    body{
+
+    background: black;
+    background-image: url('https://4.bp.blogspot.com/-ReGnss08_wA/WluM4eQC94I/AAAAAAAABTw/vRffTIDw2m00PLQvWrumjiBwm0XBrO7LACLcBGAs/s1600/matrix-gif-green-740.gif');
+    background-repeat:repeat;
+    background-size: cover;
+
+    }
+input{
+  background: #666;
+  color: white;
+  border-radius: 50px;
+  font-size: 50px;
+  margin: 10px;
+  padding: 10px;
+  border: none;
+}
+
+.button{
+  width: 80px;
+}
+
+#function {
+
+  background-color: #dd8f11;
+}
+
+  </style>
+
+
+</body>
+
+</html>
